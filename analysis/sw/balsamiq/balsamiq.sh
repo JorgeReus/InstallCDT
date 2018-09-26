@@ -1,3 +1,4 @@
+#!/bin/bash
 unzip  *.zip
 mv Balsamiq_Mockups_3 /opt
 desktop-file-install balsamiq.desktop

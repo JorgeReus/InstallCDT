@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 tar -zxf *.tar.gz
 mv eclipse /opt
 ln -s /opt/eclipse/eclipse /usr/bin/eclipse
