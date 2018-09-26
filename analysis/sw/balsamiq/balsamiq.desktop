@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Balsamiq Mockups
+Comment=Balsamiq Mockups 3.15
+Exec=wine /opt/Balsamiq_Mockups_3/"Balsamiq Mockups 3.exe"
+Icon=/opt/Balsamiq_Mockups_3/icons/mockups_doc_ico_48.png
+Categories=Graphics;
+Terminal=0
+Type=Application

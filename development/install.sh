@@ -4,7 +4,7 @@ GREEN='\e[1;32m'
 RED='\e[1;31m'
 NC='\033[0m' # No Color
 
-Refresh
+# Refresh
 echo "${BLUE}Refreshing Sources${NC}\n"
 apt update
 res_code=$?
@@ -32,7 +32,7 @@ else
 	echo "${GREEN}Completed installation for Sublime Text${NC}\n"
 fi
 
-Subversion
+# Subversion
 echo "${BLUE}Installing Subversion${NC}\n"
 apt install subversion
 res_code=$?
@@ -45,7 +45,7 @@ else
 	echo "${GREEN}Completed installation for Subversion${NC}\n"
 fi
 
-Postgres+Postgis
+# Postgres+Postgis
 echo "${BLUE}Installing Postgres+postgis${NC}\n"
 apt install wget ca-certificates
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc |  apt-key add -
@@ -63,7 +63,7 @@ else
 	echo "${GREEN}Completed installation for Postgres+postgis${NC}\n"
 fi
 
-Install the .deb packages
+# Install the .deb packages
 for deb_p in debs/* ; do
 	echo "${BLUE}Installing ${deb_p}${NC}\n"
 	dpkg -i ${deb_p}
