@@ -63,6 +63,8 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc |  apt-key 
 sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 apt update
 apt upgrade
+apt install postgresql-9.5
+apt install postgresql-client-9.5
 apt install postgresql-9.5-postgis-2.2
 res_code=$?
 if [ $res_code != 0 ]
